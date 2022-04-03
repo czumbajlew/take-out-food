@@ -1,0 +1,24 @@
+server:
+  port: 18080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/TOF-DB
+    username: tof-user
+    password: tof-user
+
+application:
+  base-url: http://localhost:18080
+  email:
+    host: smtp.gmail.com
+    port: 587
+    username: YOUR_GMAIL_USERNAME
+    password: YOUR_GMAIL_PASSWORD
+    transport-protocol: smtp
+    smtp-auth: true
+    smtp-start-tls-enable: true
+    debug: true
+  jwt:
+    secret-key: secret_secret_secret_secret_secret
+    token-prefix: Bearer
+    token-expiration: 1
